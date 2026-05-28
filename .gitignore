@@ -1,0 +1,125 @@
+
+## Next.js
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debugging
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+npm-error.log*
+yarn-error.log*
+pnpm-error.log*
+
+# local env files
+.env*.local
+.env
+.env.production
+.env.development
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+
+
+
+## Nestjs
+# compiled output
+/dist
+/node_modules
+
+# misc
+.DS_Store
+*.tsbuildinfo
+.npmrc
+
+# debugging
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+npm-error.log*
+yarn-error.log*
+pnpm-error.log*
+
+# local env files
+.env
+.env*.local
+
+# coverage
+/coverage
+
+
+## Spring boot
+# built application files
+/target/
+/build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# spring boot
+.sts4-cache
+.springBeans
+**/spring-boot-devtools.properties
+
+# intellij idea
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# log files
+*.log
+logs/
+
+# os generated files
+.DS_Store
+Thumbs.db
+
+# misc
+.mvn/
+mvnw
+mvnw.cmd
+.gradle/
+gradlew
+gradlew.bat
+
+
+## Personal files
+
+**.pdf
+**.docx
+**.pptx
+**.xlsx
+**.png
+**.jpg
+**.jpeg
+**.zip
+**.rar
+**.7z
