@@ -5,13 +5,23 @@ import React, { ReactNode } from 'react';
 import { NavigationTools } from './navigation-tools';
 import { navbarConfig } from '@core/config/navbar-config';
 import { Separator } from '../ui/separator';
-import { SidebarTrigger } from '../ui/sidebar';
+import Image from 'next/image';
+import saegisulLogo from '@/public/assets/logo_3gs.svg';
 
 export const Navbar = ({
-	logo = 'InvesTools',
+	logo = (
+		<Image
+			src={saegisulLogo}
+			alt="3GS Logo"
+			width={40}
+			height={40}
+			priority
+			className="h-10 w-auto"
+		/>
+	),
 	hasSeparator = true,
 }: {
-	logo?: string | ReactNode;
+	logo?: ReactNode;
 	hasSeparator?: boolean;
 }) => {
 	return (
@@ -21,8 +31,7 @@ export const Navbar = ({
 					{}
 				)} flex-nowrap gap-3 px-8 md:px-12 py-5`}
 			>
-				<SidebarTrigger />
-				<div className="logo-container max-w-24 px-2 py-1">{logo}</div>
+				<div className="logo-container px-2 py-1">{logo}</div>
 				<div
 					className={`hidden sm:flex ${flexCenterTwoAxis(
 						{}
