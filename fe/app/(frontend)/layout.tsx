@@ -29,7 +29,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="h-full" suppressHydrationWarning>
+      <body className="h-full easter-egg-1" suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
