@@ -10,8 +10,8 @@ export default function SiteLayout({
       <Navbar />
       <main>
         {children}
-        This is a test for a nested layout
       </main>
+      {/* <footer></footer> */}
     </>
   );
 }

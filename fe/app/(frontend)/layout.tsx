@@ -26,10 +26,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
       suppressHydrationWarning
     >
-      <body className="h-full easter-egg-1" suppressHydrationWarning>
+      <body className="min-h-screen easter-egg-1" suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
