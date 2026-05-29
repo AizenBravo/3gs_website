@@ -19,6 +19,9 @@
       }
     ],
     "paths": {
+      "@be/*": ["./app/(backend)/*"],
+      "@fe/*": ["./app/(frontend)/*"],
+      "@core/*": ["./app/core/*"],      
       "@/*": ["./*"]
     }
   },
