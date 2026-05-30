@@ -6,7 +6,7 @@ import { NavigationTools } from './navigation-tools';
 import { navbarConfig } from '@core/config/navbar-config';
 import { Separator } from '../ui/separator';
 import Image from 'next/image';
-import saegisulLogo from '@/public/assets/logo_3gs.svg';
+import saegisulLogo from '@/public/assets/logos/logo_3gs.svg';
 
 export const Navbar = ({
 	logo = (

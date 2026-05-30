@@ -4,14 +4,34 @@ export const navbarConfig: {
   description: string;
 }[] = [
   {
-    title: 'Futures Risk Management',
-    href: '/v1/risk-management/futures',
-    description:
-      'Learn and calculate a profitable position using futures trading',
-  },
-  {
     title: 'Home',
     href: '/',
-    description: 'Go to the dashboard',
+    description: 'Welcome to Saegisul',
   },
+  {
+    title: 'The Challenge',
+    href: '/#challenge',
+    description: 'The big business pain points and inefficiencies we solve',
+  },
+  {
+    title: 'Expertise',
+    href: '/#expertise',
+    description: 'Our technical capabilities in B2B SaaS and automation',
+  },
+  {
+    title: 'About',
+    href: '/#about',
+    description: 'Our story and mission to eliminate business friction',
+  },
+  // {
+  //   title: 'Projects',
+  //   href: '/#projects',
+  //   description: 'Projects developed by Saegisul',
+  // },
+  // {
+  //   title: 'Contact',
+  //   href: '/#contact',
+  //   description: 'Contact Saegisul',
+  // },
+  // Do it later
 ];
