@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import modernJet from '@/public/assets/stock/modern_jet.png';
 import { Button } from '@core/components/ui/button';
+import SiteHeroInfoCard from './site-hero-info-card';
 
 const SiteHero = () => {
   const headline = 'Engineering high-impact software to maximize your business profits.';
@@ -9,7 +10,7 @@ const SiteHero = () => {
   const ctaSecondary = 'Get a quote';
 
   return (
-    <div className="hero py-4 px-8 md:px-12">
+    <div className="hero py-4 px-8 md:px-12 grid grid-cols-1 md:grid-cols-2">
       <div className="hero-image">
         <Image
           src={modernJet}
@@ -25,14 +26,7 @@ const SiteHero = () => {
           }
         />
       </div>
-      <div className="hero-title">
-        <h1>{headline}</h1>
-        <p>{subHeadline}</p>
-        <div>
-          <Button>{ctaPrimary}</Button>
-          <Button variant='secondary'>{ctaSecondary}</Button>
-        </div>
-      </div>
+      <SiteHeroInfoCard />
     </div>
   )
 }

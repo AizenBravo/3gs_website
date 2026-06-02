@@ -1,0 +1,1 @@
+export const h1 = 'font-bold text-4xl';
