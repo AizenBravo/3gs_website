@@ -13,9 +13,9 @@ const Challenges = () => {
 
   return (
     <div className={``} id="challenges">
-      <div className={`${columnFlex({ gapSize: GapSize.LARGE })} ${sectionVerticalPadding} `}>
+      <div className={`${columnFlex({})} ${sectionVerticalPadding} `}>
         <h2 className={h2}>{subtitle}</h2>
-        <div className="flex flex-row flex-wrap gap-4 ">
+        <div className="flex flex-row flex-wrap gap-4">
           {/* Here have to go the balls */}
           {commonChallengesBusinessesSuffer.map((businessChallenge, i) =>
             <div key={i} className={`hover:bg-red-500 translate-4`} >
