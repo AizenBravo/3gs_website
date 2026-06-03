@@ -13,7 +13,7 @@ const SiteHero = () => {
   const ctaSecondary = 'Get a quote';
 
   return (
-    <div className={`hero mt-5 ${sectionVerticalPadding} grid grid-cols-1 md:grid-cols-2`}>
+    <div className={`hero mt-5 ${sectionVerticalPadding} grid grid-cols-1 md:grid-cols-2`} id='home'>
       <div className="hero-image flex items-center">
         <Image
           src={modernJet}

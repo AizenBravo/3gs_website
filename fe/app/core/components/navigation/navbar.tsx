@@ -1,7 +1,7 @@
 'use client';
 import { flexCenterTwoAxis } from '@core/css-custom-classes/flex';
 import Link from 'next/link';
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { NavigationTools } from './navigation-tools';
 import { navbarConfig } from '@core/config/navbar-config';
 import { Separator } from '../ui/separator';

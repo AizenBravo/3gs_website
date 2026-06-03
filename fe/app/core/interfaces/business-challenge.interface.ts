@@ -1,5 +1,8 @@
+import { LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
+
 export interface BusinessChallenge {
   title: string;
   description: string;
-  icon?: string; // Change to Lucide SVG
+  icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>;
 }
