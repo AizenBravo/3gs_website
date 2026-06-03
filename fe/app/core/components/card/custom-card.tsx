@@ -8,18 +8,26 @@ const CustomCard = ({
   hasGlassmorphism = false,
   opacity = 95,
   hslBackground = "var(--card)",
+  hasBorder = true
 }: {
   children: React.ReactNode;
   className?: string;
   hasGlassmorphism?: boolean;
   opacity?: number;
   hslBackground?: string;
+  hasBorder?: boolean;
 }) => {
-  const cardStyle: React.CSSProperties = hasGlassmorphism
+  let cardStyle: React.CSSProperties = hasGlassmorphism
     ? {
-      backgroundColor: `hsl(${hslBackground} / ${opacity / 100})`, // Use HSL with transparency
+      backgroundColor: `oklch(${hslBackground} / ${opacity / 100})`, // Use HSL with transparency
     }
     : {};
+
+  if (!hasBorder) {
+    console.log('XD, no border')
+    cardStyle = { ...cardStyle, border: 'none' }
+  }
+
 
   const cardCssClasses = hasGlassmorphism ? glassmorphism : "";
 

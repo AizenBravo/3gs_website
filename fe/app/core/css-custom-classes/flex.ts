@@ -1,5 +1,3 @@
-// 'use client';
-
 import { GapSize } from '@core/enums/gap-size';
 import { FlexDirection } from '../enums/flex-direction.enum';
 
