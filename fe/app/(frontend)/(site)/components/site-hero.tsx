@@ -2,6 +2,9 @@ import Image from 'next/image';
 import modernJet from '@/public/assets/stock/modern_jet.png';
 import { Button } from '@core/components/ui/button';
 import SiteHeroInfoCard from './site-hero-info-card';
+import SiteHeroInfoCardContent from './site-hero-info-card-content';
+import { columnFlex } from '@core/css-custom-classes/flex';
+import { sectionVerticalPadding } from '@core/css-custom-classes/section';
 
 const SiteHero = () => {
   const headline = 'Engineering high-impact software to maximize your business profits.';
@@ -10,8 +13,8 @@ const SiteHero = () => {
   const ctaSecondary = 'Get a quote';
 
   return (
-    <div className="hero py-4 px-8 md:px-12 grid grid-cols-1 md:grid-cols-2">
-      <div className="hero-image">
+    <div className={`hero mt-5 ${sectionVerticalPadding} grid grid-cols-1 md:grid-cols-2`}>
+      <div className="hero-image flex items-center">
         <Image
           src={modernJet}
           alt="3GS Logo"
@@ -24,9 +27,12 @@ const SiteHero = () => {
               height: 'auto',
             }
           }
+          draggable={false}
         />
       </div>
-      <SiteHeroInfoCard />
+      <div className={columnFlex({})}>
+        <SiteHeroInfoCardContent />
+      </div>
     </div>
   )
 }
