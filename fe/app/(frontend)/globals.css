@@ -82,6 +82,12 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --ivory: oklch(0.862 0.03 108.546);
+
+  /* Custom classes for the dynamic bubbles  */
+  --light-gray-vals: 128, 128, 128;
+  --gold-vals: 214, 189, 104;
+  --ivory-vals: 248, 240, 198;
+  --really-dark-gray-vals: 20, 20, 20;
 }
 
 .dark {

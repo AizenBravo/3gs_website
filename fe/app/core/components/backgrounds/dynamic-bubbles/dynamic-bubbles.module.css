@@ -1,10 +1,6 @@
 .bubbles_container {
   --circle-size: 400px;
   --mid-circle-size: 200px;
-  --light-gray-vals: 128, 128, 128;
-  --gold-vals: 214, 189, 104;
-  --ivory-vals: 248, 240, 198;
-  --really-dark-gray-vals: 20, 20, 20;
 
   position: absolute;
   width: 100%;
