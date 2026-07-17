@@ -8,9 +8,11 @@ import { BusinessChallenge } from '@core/interfaces/business-challenge.interface
 const ChallengeCard = ({
   businessChallenge,
   hasGlassmorphism = false,
+  opacity = 50
 }: {
   businessChallenge: BusinessChallenge;
   hasGlassmorphism?: boolean;
+  opacity?: number;
 }) => {
   const hasBorder = false;
 
@@ -18,12 +20,14 @@ const ChallengeCard = ({
     <CustomCard
       hasGlassmorphism={hasGlassmorphism}
       hasBorder={hasBorder}
+      opacity={opacity}
       className={`hover:drop-shadow-cyan-400`}
     >
       <CardHeader className="text-center text-xl font-bold">
         {businessChallenge.title}
       </CardHeader>
       <CardContent className={`px-2 sm:px-4 md:px-6`}>
+        {/* <pre>{opacity}</pre> */}
         <div
           className={`card-content ${flexCenterTwoAxis({ flexDirection: FlexDirection.COL })} gap-2`}
         >
@@ -35,6 +39,7 @@ const ChallengeCard = ({
           </div>
         </div>
       </CardContent>
+
     </CustomCard>
   );
 };
