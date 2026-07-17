@@ -19,7 +19,7 @@ const CustomCard = ({
 }) => {
   let cardStyle: React.CSSProperties = hasGlassmorphism
     ? {
-      backgroundColor: `oklch(${hslBackground} / ${opacity / 100})`, // Use HSL with transparency
+      backgroundColor: `color-mix(in oklch, ${hslBackground} ${opacity}%, transparent)`,
     }
     : {};
 

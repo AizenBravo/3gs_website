@@ -7,7 +7,7 @@ import { GapSize } from "@core/enums/gap-size";
 
 const Challenges = () => {
   // Add glassmorphism card along a background with moving balls (just like in the portfolio website)
-  // Then those will be behind the glassmorphism cards, addign dynamism.
+  // Then those will be behind the glassmorphism cards, adding dynamism.
   // The color of the balls have to match the website
   const subtitle = 'Common challenges your business might be facing'
 
@@ -15,11 +15,11 @@ const Challenges = () => {
     <div className={``} id="challenges">
       <div className={`${columnFlex({})} ${sectionVerticalPadding} `}>
         <h2 className={h2}>{subtitle}</h2>
-        <div className="flex flex-row flex-wrap gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Here have to go the balls */}
           {commonChallengesBusinessesSuffer.map((businessChallenge, i) =>
-            <div key={i} className={`hover:bg-red-500 translate-4`} >
-              <ChallengeCard businessChallenge={businessChallenge} />
+            <div key={i} className={``} >
+              <ChallengeCard businessChallenge={businessChallenge} hasGlassmorphism={true} />
             </div>
           )}
         </div>
