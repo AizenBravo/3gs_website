@@ -1,7 +1,7 @@
 import { PipeData } from '@core/interfaces/pipe-data.interface';
 import React from 'react';
 
-const Pipe = ({
+const PipeV2 = ({
   header,
   body,
   opacity = 30,
@@ -10,15 +10,24 @@ const Pipe = ({
 
   return (
     <div className="relative flex items-stretch w-full min-h-[3.5rem] rounded-full border border-primary/30 shadow-md transition-all duration-300 hover:border-primary/60 hover:shadow-lg">
+      {/* Cylinder 'background or inside */}
+      <div
+        className="absolute inset-0 rounded-full -z-10 pointer-events-none"
+        style={{
+          background: `rgba(var(--light-gray-vals))`,
+          transform: 'scale(0.85) scaleX(0.92)',
+        }}
+      />
+
       {/* 3D Cylindrical Reflection Overlay */}
-      <div 
+      <div
         className="absolute inset-0 rounded-full -z-10 pointer-events-none"
         style={{
           background: `linear-gradient(to bottom, 
             color-mix(in oklch, var(--primary) 40%, transparent) 0%, 
             color-mix(in oklch, var(--primary) ${opacityVal}%, transparent) 30%, 
             color-mix(in oklch, var(--primary) ${Math.max(0, opacityVal - 15)}%, transparent) 70%, 
-            color-mix(in oklch, var(--primary) 45%, transparent) 100%)`
+            color-mix(in oklch, var(--primary) 45%, transparent) 100%)`,
         }}
       />
 
@@ -37,5 +46,4 @@ const Pipe = ({
   );
 };
 
-export default Pipe;
-
+export default PipeV2;

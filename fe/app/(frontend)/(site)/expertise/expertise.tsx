@@ -1,4 +1,5 @@
-import Pipe from '@core/components/pipe';
+import Pipe from '@core/components/pipe/pipe';
+import PipeV2 from '@core/components/pipe/pipe-v2';
 import TriangleLayout from '@core/components/shapes/triangle-layout';
 import { columnFlex } from '@core/css-custom-classes/flex';
 import { sectionVerticalPadding } from '@core/css-custom-classes/section';
@@ -16,9 +17,16 @@ const Expertise = () => {
         {/* Since we will not offer customs services yet, we will only have one service, i.e., developing
         Software for businesses to increment their productivity and earnings by removing inefficiencies */}
         <Pipe
-          header={
-            <h3 className="text-lg font-semibold">Software for businesses</h3>
+          body={
+            <p className="text-base">
+              We develop custom software solutions tailored to your business
+              needs.
+            </p>
           }
+          opacity={35}
+        />
+        <PipeV2
+          header={<h3>Custom software development</h3>}
           body={
             <p className="text-base">
               We develop custom software solutions tailored to your business
