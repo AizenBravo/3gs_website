@@ -7,6 +7,8 @@ const PipeV2 = ({
   opacity = 30,
 }: PipeData & { opacity?: number }) => {
   const opacityVal = Math.min(Math.max(opacity, 0), 100);
+  const scaleX = 0.99;
+  const scaleY = 0.83;
 
   return (
     <div className="relative flex items-stretch w-full min-h-[3.5rem] rounded-full border border-primary/30 shadow-md transition-all duration-300 hover:border-primary/60 hover:shadow-lg">
@@ -14,8 +16,8 @@ const PipeV2 = ({
       <div
         className="absolute inset-0 rounded-full -z-10 pointer-events-none"
         style={{
-          background: `rgba(var(--light-gray-vals))`,
-          transform: 'scale(0.85) scaleX(0.92)',
+          background: `rgba(var(--pipe-interior-color))`,
+          transform: `scaleX(${scaleX}) scaleY(${scaleY})`,
         }}
       />
 

@@ -1,5 +1,6 @@
 import Pipe from '@core/components/pipe/pipe';
 import PipeV2 from '@core/components/pipe/pipe-v2';
+import PipeV3 from '@core/components/pipe/pipe-v3';
 import TriangleLayout from '@core/components/shapes/triangle-layout';
 import { columnFlex } from '@core/css-custom-classes/flex';
 import { sectionVerticalPadding } from '@core/css-custom-classes/section';
@@ -36,6 +37,9 @@ const Expertise = () => {
           opacity={35}
         />
       </div>
+      <PipeV3>
+        <p>Custom software development</p>
+      </PipeV3>
     </div>
   );
 };

@@ -39,6 +39,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-jet-gray: var(--jet-gray);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -88,6 +89,8 @@
   --gold-vals: 214, 189, 104;
   --ivory-vals: 248, 240, 198;
   --really-dark-gray-vals: 20, 20, 20;
+  --pipe-interior-color: 128, 128, 128;
+  --jet-gray: rgb(198, 198, 198);
 }
 
 .dark {
