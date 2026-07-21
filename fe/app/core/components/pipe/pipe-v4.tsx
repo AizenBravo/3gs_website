@@ -27,18 +27,18 @@ const PipeV4 = ({ header, body, opacity = 35 }: PipeV4Props) => {
       </div>
 
       {/* Grid Overlay for Content Positioning */}
-      <div className="relative z-10 w-full h-full flex items-center px-[4%] md:px-[6%]">
+      <div className="relative z-10 w-full h-full flex items-center px-[4%] md:px-[6%] max-w-[900px] mx-auto">
         {/* Left Side: Header Sticker */}
-        <div className="w-[42%] h-[60%] flex items-center justify-center">
+        <div className="w-[42%] h-[80%] flex items-center justify-center">
           {header && <PipeLabel className="w-full h-full">{header}</PipeLabel>}
         </div>
 
         {/* Right Side: Glassmorphic Card Content */}
-        <div className="w-[58%] h-full flex items-center pl-[6%] pr-[2%]">
+        <div className="max-w-[58%] h-full flex items-center pl-[6%] pr-[2%] max-h-[25%] overflow-hidden bg-pink-500">
           <CustomCard
             hasGlassmorphism={true}
             opacity={opacity}
-            className="w-full max-h-[85%] border-none shadow-none text-foreground flex items-center justify-center overflow-auto"
+            className="w-full max-h-[80%] border-none shadow-none text-foreground flex items-center justify-center overflow-auto"
           >
             <CardContent className="p-2 sm:p-4 text-xs sm:text-sm md:text-base font-medium text-center w-full">
               {body}
