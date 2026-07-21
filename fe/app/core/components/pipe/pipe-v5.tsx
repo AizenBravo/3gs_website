@@ -2,8 +2,8 @@ import React from 'react';
 import CustomCard from '@core/components/card/custom-card';
 import { CardContent, CardHeader } from '@core/components/ui/card';
 import { flexCenterTwoAxis } from '@core/css-custom-classes/flex';
-import ArrowLeftSVG from '@core/svgs/arrow-left.svg';
-import ArrowRightSVG from '@core/svgs/arrow-right.svg';
+import LongArrowLeftSVG from '@core/svgs/long-arrow-left.svg';
+import LongArrowRightSVG from '@core/svgs/long-arrow-right.svg';
 
 interface PipeV5Props {
   header?: React.ReactNode;
@@ -25,23 +25,16 @@ const PipeV5 = ({
         className={`absolute inset-0 pointer-events-none ${flexCenterTwoAxis({})}`}
       >
         {isArrowPointingRight ? (
-          <ArrowRightSVG
-            className="w-full h-[28px] pointer-events-none"
+          <LongArrowRightSVG
+            className="w-full h-[28px] sm:h-[35px] pointer-events-none"
             fill="var(--jet-gray)"
             stroke="var(--jet-gray)"
-            style={{
-              width: '1200px',
-              height: '200px',
-            }}
           />
         ) : (
-          <ArrowLeftSVG
-            className="w-full h-[28px] pointer-events-none"
+          <LongArrowLeftSVG
+            className="w-full h-[28px] sm:h-[35px] pointer-events-none"
             fill="var(--jet-gray)"
             stroke="var(--jet-gray)"
-            style={{
-              width: '100%',
-            }}
           />
         )}
       </div>
