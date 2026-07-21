@@ -13,36 +13,14 @@ interface PipeV4Props {
 
 const PipeV4 = ({ header, body, opacity = 35 }: PipeV4Props) => {
   return (
-    <div className="relative w-full aspect-[500/150] min-h-[140px] flex items-center overflow-hidden rounded-lg select-none bg-red-600">
+    <div className="relative w-full min-h-[140px] flex items-center overflow-hidden rounded-lg select-none">
       {/* Background Pipeline Image */}
-      <div className="absolute inset-0 rounded-full pointer-events-none bg-pink-500">
+      <div className={`absolute inset-0 pointer-events-none`}>
         <Image
           src={PipeV8Image}
           alt="Pipeline Background"
-          // fill
-          style={{
-            width: '100%',
-            height: 'auto',
-            background: 'teal',
-            // height: 'auto',
-          }}
+          fill
           sizes="(max-width: 768px) 100vw, 500px"
-          // sizes="(max-width: 768px) 100vw, 500px"
-          className="object-cover pointer-events-none"
-          priority
-        />
-        <Image
-          src={PipeV8Image}
-          alt="Pipeline Background"
-          // fill
-          style={{
-            width: '100%',
-            height: 'auto',
-            background: 'teal',
-            // height: 'auto',
-          }}
-          sizes="(max-width: 768px) 100vw, 500px"
-          // sizes="(max-width: 768px) 100vw, 500px"
           className="object-cover pointer-events-none"
           priority
         />

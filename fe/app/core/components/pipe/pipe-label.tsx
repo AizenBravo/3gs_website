@@ -17,12 +17,12 @@ const PipeLabel = ({ children, className = '' }: PipeLabelProps) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M 20 0 L 100 0 Q 80 50 100 100 L 20 100 Q 0 50 20 0 Z"
+          d="M 80 0 L 0 0 Q 20 50 0 100 L 80 100 Q 100 50 80 0 Z"
         />
       </svg>
 
       {/* Content Container positioned above the SVG */}
-      <div className="relative z-10 w-full h-full flex items-center justify-center pl-[22%] pr-[18%] py-2 text-foreground font-semibold text-center select-none">
+      <div className="relative z-10 w-full h-full flex items-center justify-center pl-[18%] pr-[22%] py-2 text-foreground font-semibold text-center select-none">
         {children}
       </div>
     </div>
