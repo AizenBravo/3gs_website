@@ -6,8 +6,9 @@ import {
   Trash2,
   Workflow,
 } from 'lucide-react';
+import { ExpertiseOffering } from '../interfaces/expertise-offering.interface';
 
-export const expertiseOfferings = [
+export const expertiseOfferings: ExpertiseOffering[] = [
   {
     title: 'Automated Ecosystems',
     description:

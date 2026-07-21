@@ -10,6 +10,7 @@ import { sectionVerticalPadding } from '@core/css-custom-classes/section';
 import { h2 } from '@core/css-custom-classes/text';
 import { FlexDirection } from '@core/enums/flex-direction.enum';
 import { Repeat2 } from 'lucide-react';
+import ExpertiseOfferingDisplay from './components/expertise-offering-display';
 
 const Expertise = () => {
   // Add the bricks-like structure you had on your portfolio, perhaps also do those rbicks in the form
@@ -25,28 +26,13 @@ const Expertise = () => {
         {/* Since we will not offer customs services yet, we will only have one service, i.e., developing
         Software for businesses to increment their productivity and earnings by removing inefficiencies */}
         {expertiseOfferings.map((expertiseOffering, i) => (
-          <div
-            className={`test ${flexCenterTwoAxis({ flexDirection: FlexDirection.ROW })} gap-6`}
+          <ExpertiseOfferingDisplay
             key={`expertiseOffering-${i}`}
-          >
-            <expertiseOffering.beforeIcon width={iconSize} height={iconSize} />
-            <PipeV5
-              opacity={cardOpacity}
-              header={
-                <h2
-                  className={`text-center line-clamp-4 overflow-hidden text-ellipsis`}
-                >
-                  {expertiseOffering.title}
-                </h2>
-              }
-              body={
-                <div className={`line-clamp-3 overflow-hidden text-ellipsis`}>
-                  <p>{expertiseOffering.description}</p>
-                </div>
-              }
-            />
-            <expertiseOffering.afterIcon width={iconSize} height={iconSize} />
-          </div>
+            id={i}
+            expertiseOffering={expertiseOffering}
+            iconSize={iconSize}
+            cardOpacity={cardOpacity}
+          />
         ))}
       </div>
     </div>
