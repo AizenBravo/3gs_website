@@ -1,6 +1,7 @@
 import Pipe from '@core/components/pipe/pipe';
 import PipeV2 from '@core/components/pipe/pipe-v2';
 import PipeV3 from '@core/components/pipe/pipe-v3';
+import PipeV4 from '@core/components/pipe/pipe-v4';
 import TriangleLayout from '@core/components/shapes/triangle-layout';
 import { columnFlex } from '@core/css-custom-classes/flex';
 import { sectionVerticalPadding } from '@core/css-custom-classes/section';
@@ -37,9 +38,27 @@ const Expertise = () => {
           opacity={35}
         />
       </div>
-      <PipeV3>
-        <p>Custom software development</p>
-      </PipeV3>
+      <PipeV4
+        opacity={35}
+        header={
+          <>
+            <h2>
+              Custom software development Custom software development Custom
+              software development Custom software development Custom software
+              development Custom software development Custom software
+              development Custom
+            </h2>
+          </>
+        }
+        body={
+          <div>
+            <p>We make tailored apps for finance businesses</p>
+            <p>We make tailored apps for finance businesses</p>
+            <p>We make tailored apps for finance businesses</p>
+            <p>We make tailored apps for finance businesses</p>
+          </div>
+        }
+      ></PipeV4>
     </div>
   );
 };
