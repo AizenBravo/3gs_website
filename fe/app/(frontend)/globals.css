@@ -91,7 +91,17 @@
   --really-dark-gray-vals: 20, 20, 20;
   --pipe-interior-color: 128, 128, 128;
   --jet-gray: rgb(198, 198, 198);
+  --footer-muted: #777777;
+  --footer-accent: oklch(0.55 0.12 200);
 }
+
+.footer-gradient {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+}
+@media (prefers-color-scheme: dark) {
+  .footer-gradient { background: linear-gradient(135deg, #1a1a1a, #0a0a0a); }
+}
+
 
 .dark {
   --background: oklch(0.145 0 0);

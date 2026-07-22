@@ -6,7 +6,7 @@ import PipeV5 from '@core/components/pipe/pipe-v5';
 import TriangleLayout from '@core/components/shapes/triangle-layout';
 import { expertiseOfferings } from '@core/constants/expertise-offerings';
 import { columnFlex, flexCenterTwoAxis } from '@core/css-custom-classes/flex';
-import { sectionVerticalPadding } from '@core/css-custom-classes/section';
+import { sectionHorizontalPadding } from '@core/css-custom-classes/section';
 import { h2 } from '@core/css-custom-classes/text';
 import { FlexDirection } from '@core/enums/flex-direction.enum';
 import { Repeat2 } from 'lucide-react';
@@ -21,7 +21,7 @@ const Expertise = () => {
 
   return (
     <div className={``} id="expertise">
-      <div className={`${columnFlex({})} ${sectionVerticalPadding} `}>
+      <div className={`${columnFlex({})} ${sectionHorizontalPadding}`}>
         <h2 className={`${h2} text-right`}>{subtitle}</h2>
         {/* Since we will not offer customs services yet, we will only have one service, i.e., developing
         Software for businesses to increment their productivity and earnings by removing inefficiencies */}
