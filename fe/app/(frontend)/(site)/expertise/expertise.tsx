@@ -11,6 +11,7 @@ import { h2 } from '@core/css-custom-classes/text';
 import { FlexDirection } from '@core/enums/flex-direction.enum';
 import { Repeat2 } from 'lucide-react';
 import ExpertiseOfferingDisplay from './components/expertise-offering-display';
+import { GapSize } from '@core/enums/gap-size';
 
 const Expertise = () => {
   // Add the bricks-like structure you had on your portfolio, perhaps also do those rbicks in the form
@@ -21,7 +22,9 @@ const Expertise = () => {
 
   return (
     <div className={``} id="expertise">
-      <div className={`${columnFlex({})} ${sectionHorizontalPadding}`}>
+      <div
+        className={`flex flex-col ${sectionHorizontalPadding} gap-20 sm:gap-4`}
+      >
         <h2 className={`${h2} text-right`}>{subtitle}</h2>
         {/* Since we will not offer customs services yet, we will only have one service, i.e., developing
         Software for businesses to increment their productivity and earnings by removing inefficiencies */}

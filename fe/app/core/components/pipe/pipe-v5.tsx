@@ -19,20 +19,22 @@ const PipeV5 = ({
   isArrowPointingRight = true,
 }: PipeV5Props) => {
   return (
-    <div className="relative w-full min-h-[140px] flex items-center overflow-hidden rounded-lg select-none bg-transparent">
+    <div className="relative w-full min-h-[200px] md:min-h-[140px] flex items-center overflow-hidden rounded-lg select-none bg-transparent">
       {/* Background Pipeline Image / SVG Arrow */}
+      {/* On mobile (< md): rotate the arrow 90° so it points downward/upward */}
+      {/* On desktop (md+): keep horizontal arrow as-is */}
       <div
         className={`absolute inset-0 pointer-events-none ${flexCenterTwoAxis({})}`}
       >
         {isArrowPointingRight ? (
           <LongArrowRightSVG
-            className="w-full h-[28px] sm:h-[35px] pointer-events-none"
+            className="w-full h-[28px] sm:h-[35px] pointer-events-none rotate-90 md:rotate-0 transition-transform"
             fill="var(--jet-gray)"
             stroke="var(--jet-gray)"
           />
         ) : (
           <LongArrowLeftSVG
-            className="w-full h-[28px] sm:h-[35px] pointer-events-none"
+            className="w-full h-[28px] sm:h-[35px] pointer-events-none rotate-90 md:rotate-0 transition-transform"
             fill="var(--jet-gray)"
             stroke="var(--jet-gray)"
           />
