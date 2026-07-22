@@ -23,7 +23,7 @@ const Expertise = () => {
   return (
     <div className={``} id="expertise">
       <div
-        className={`flex flex-col ${sectionHorizontalPadding} gap-20 sm:gap-4`}
+        className={`flex flex-col ${sectionHorizontalPadding} gap-20 md:gap-4`}
       >
         <h2 className={`${h2} text-right`}>{subtitle}</h2>
         {/* Since we will not offer customs services yet, we will only have one service, i.e., developing
