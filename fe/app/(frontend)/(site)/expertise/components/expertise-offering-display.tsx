@@ -16,10 +16,10 @@ const ExpertiseOfferingDisplay = ({
 }) => {
   return id % 2 === 0 ? (
     <div
-      className={`test ${flexCenterTwoAxis({ flexDirection: FlexDirection.ROW })} gap-6`}
+      className={`group test ${flexCenterTwoAxis({ flexDirection: FlexDirection.ROW })} gap-6 w-full`}
       key={`expertiseOffering-${id}`}
     >
-      <expertiseOffering.beforeIcon width={iconSize} height={iconSize} />
+      <expertiseOffering.beforeIcon width={iconSize} height={iconSize} className="before-icon-glow shrink-0" />
       <PipeV5
         opacity={cardOpacity}
         header={
@@ -35,14 +35,14 @@ const ExpertiseOfferingDisplay = ({
           </div>
         }
       />
-      <expertiseOffering.afterIcon width={iconSize} height={iconSize} />
+      <expertiseOffering.afterIcon width={iconSize} height={iconSize} className="after-icon-glow shrink-0" />
     </div>
   ) : (
     <div
-      className={`test ${flexCenterTwoAxis({ flexDirection: FlexDirection.ROW })} gap-6`}
+      className={`group test ${flexCenterTwoAxis({ flexDirection: FlexDirection.ROW })} gap-6 w-full`}
       key={`expertiseOffering-${id}`}
     >
-      <expertiseOffering.afterIcon width={iconSize} height={iconSize} />
+      <expertiseOffering.afterIcon width={iconSize} height={iconSize} className="after-icon-glow shrink-0" />
       <PipeV5
         opacity={cardOpacity}
         header={
@@ -59,7 +59,7 @@ const ExpertiseOfferingDisplay = ({
         }
         isArrowPointingRight={false}
       />
-      <expertiseOffering.beforeIcon width={iconSize} height={iconSize} />
+      <expertiseOffering.beforeIcon width={iconSize} height={iconSize} className="before-icon-glow shrink-0" />
     </div>
   );
 };
