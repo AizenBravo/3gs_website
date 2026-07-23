@@ -33,6 +33,9 @@ const FooterV1 = ({ hasSeparator = true }: { hasSeparator?: boolean }) => {
             {EnumeratePipe.transform(authors)} &nbsp;{`—`}&nbsp; All rights
             reserved
           </p>
+          <p className="text-xs mt-2" style={{ color: 'var(--footer-muted)' }}>
+            © 2026 3GS. Powered by Saegisul Technologies.
+          </p>
           {/* Modern icon for automation */}
           <div className="mt-4 flex items-center justify-center md:justify-start">
             <Rocket className="w-6 h-6" color="var(--footer-accent)" />
